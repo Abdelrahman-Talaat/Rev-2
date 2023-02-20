@@ -66,6 +66,10 @@ public class HomePage {
         clickLink("//a[@href='/geolocation']");
         return new GeoLocationPage(driver);
    }
+   public horizontalSliderPage clickHorizontalSlider(){
+        clickLink("//a[@href='/horizontal_slider']");
+        return new horizontalSliderPage(driver);
+   }
     public void clickLink(String linkLocator){
         driver.findElement(By.xpath(linkLocator)).click();
     }
