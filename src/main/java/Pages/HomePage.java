@@ -70,6 +70,10 @@ public class HomePage {
         clickLink("//a[@href='/horizontal_slider']");
         return new horizontalSliderPage(driver);
    }
+   public hoversPage clickHovers(){
+        clickLink("//a[@href='/hovers']");
+        return new hoversPage(driver);
+   }
     public void clickLink(String linkLocator){
         driver.findElement(By.xpath(linkLocator)).click();
     }
