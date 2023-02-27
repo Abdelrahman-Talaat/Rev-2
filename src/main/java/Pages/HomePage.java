@@ -74,6 +74,10 @@ public class HomePage {
         clickLink("//a[@href='/hovers']");
         return new hoversPage(driver);
    }
+   public infinteScrollPage clickInfiniteScroll(){
+        clickLink("//a[@href='/infinite_scroll']");
+        return new infinteScrollPage(driver);
+   }
     public void clickLink(String linkLocator){
         driver.findElement(By.xpath(linkLocator)).click();
     }
