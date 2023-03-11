@@ -78,6 +78,14 @@ public class HomePage {
         clickLink("//a[@href='/infinite_scroll']");
         return new infinteScrollPage(driver);
    }
+   public inputPage clickInputPage(){
+        clickLink("//a[@href='/inputs']");
+        return new inputPage(driver);
+   }
+   public jQueryUiMenuPage clickJqueryUiPage(){
+        clickLink("//a[@href='/jqueryui/menu']");
+        return new jQueryUiMenuPage(driver);
+   }
     public void clickLink(String linkLocator){
         driver.findElement(By.xpath(linkLocator)).click();
     }
